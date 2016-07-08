@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" http-equiv="content-type" content="text/html" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Pragram" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link href="css/core.css" rel="stylesheet" type="text/css" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/register.css" rel="stylesheet" type="text/css" />
+    <title>requireJS测试</title>
+</head>
+
+<body>
+    <div class="main">
+        <p class="title">您还未注册</p>
+        <section class="btn-box">
+            <div id="divLogin" class="login_screen">
+                <div class="input-box">
+                    <input id="txtLoginId" type="text" placeholder="您的手机号码" />
+                    <input id="identifyingCode" type="text" placeholder="验证码" />
+                    <a href="#" class="require"></a>
+                </div>
+                <a href="#" class="btn-login">登录</a>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="js/require.js" data-main="js/app/main.js"></script>
+</html>
