@@ -1,0 +1,23 @@
+require.config({
+	baseUrl:'js/plugins',
+	paths:{
+		zepto:"zepto.min",
+		sha1:"sha1.min",
+		cookie:"zepto.cookie.min",
+		stats:'http://tajs.qq.com/stats?sId=45330147'
+	},
+	shim:{
+		"zepto":{
+			exports:"$",
+		},
+		"cookie":{
+			deps:['zepto'],
+			exports:"$.fn",
+		},
+	}
+})
+require(['zepto','../auth','../app/index'],function($,a,b)
+{
+	a.auth();
+	b.init();
+})
