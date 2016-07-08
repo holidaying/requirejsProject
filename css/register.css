@@ -1,0 +1,239 @@
+html,
+body {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #EFEFF4;
+    overflow: hidden;
+    font-family: Arial;
+}
+
+.main {
+    padding: 20% 20px;
+}
+
+.title {
+    text-align: center;
+    color: #4A90E2;
+}
+.error
+{
+    color: #D10C24;
+}
+.btn-box {
+    position: relative;
+    margin-top: 15%;
+}
+
+h2 {
+    margin: 0 0 .6em 0;
+}
+
+input {
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.require {
+    position: absolute;
+    background: #3cf;
+    padding: 6px 15px;
+    right: 8%;
+    color: #222;
+    border-radius: 5px;
+    display: block;
+    bottom: 10px;
+}
+
+.require-disable {
+    position: absolute;
+    background: #F0F0F0;
+    padding: 6px 15px;
+    right: 8%;
+    color: #999999;
+    border-radius: 5px;
+    display: block;
+    bottom: 10px;
+}
+
+input:focus {
+    border: 2px solid #3498DB;
+    box-shadow: none;
+}
+
+.container {
+    margin: 20px auto 100px auto;
+    width: 300px;
+}
+
+.login_screen {
+    background-color: #46AE52;
+    padding: 20px 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.reg_screen {
+    background-color: #46AE52;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-login {
+    position: relative;
+    border: 2px solid transparent;
+    background: #3498DB;
+    color: #ffffff;
+    font-size: 16px;
+    /* line-height: 25px; */
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    -webkit-transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
+    transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
+}
+.require span
+{
+    padding: 0px 2px 0px 0px;
+}
+.btn-login.processing {
+    width: 40px;
+    border-radius: 100%;
+    font-size: 0;
+    height: 40px;
+}
+
+.btn-login.processing:after {
+    opacity: 1;
+    -webkit-animation: rotate 0.5s 0.4s infinite linear;
+    animation: rotate 0.5s 0.4s infinite linear;
+}
+
+.btn-login:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    border: 2px dotted #fff;
+    border-radius: 50%;
+    border-left: none;
+    border-bottom: none;
+    -webkit-transition: opacity 0.1s 0.4s;
+    transition: opacity 0.1s 0.4s;
+    opacity: 0;
+}
+
+.btn-login.success {
+    -webkit-transition: opacity 0.1s 0.3s, background-color 0.1s 0.3s, -webkit-transform 0.3s 0.1s ease-out;
+    transition: opacity 0.1s 0.3s, background-color 0.1s 0.3s, -webkit-transform 0.3s 0.1s ease-out;
+    transition: transform 0.3s 0.1s ease-out, opacity 0.1s 0.3s, background-color 0.1s 0.3s;
+    transition: transform 0.3s 0.1s ease-out, opacity 0.1s 0.3s, background-color 0.1s 0.3s, -webkit-transform 0.3s 0.1s ease-out;
+    -webkit-transform: scale(30);
+    transform: scale(30);
+    opacity: 0.9;
+}
+
+.btn-login.success:after {
+    -webkit-transition: opacity 0.1s 0s;
+    transition: opacity 0.1s 0s;
+    opacity: 0;
+    -webkit-animation: none;
+    animation: none;
+}
+
+.login__signup {
+    font-size: 1.2rem;
+    color: #ABA8AE;
+}
+
+.login__signup a {
+    color: #fff;
+    cursor: pointer;
+}
+
+.ripple {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    margin-left: -7.5rem;
+    margin-top: -7.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: animRipple 0.4s;
+    animation: animRipple 0.4s;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes animRipple {
+    to {
+        -webkit-transform: scale(3.5);
+        transform: scale(3.5);
+        opacity: 0;
+    }
+}
+
+@keyframes animRipple {
+    to {
+        -webkit-transform: scale(3.5);
+        transform: scale(3.5);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes rotate {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes animatePath {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animatePath {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@media screen and (min-device-width:320px) and (max-device-height:500px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio:2) {
+    .require {}
+}
+
+
+/* iPhone5 */
+
+@media screen and (min-device-width: 320px) and (min-device-height: 500px) and (max-device-height: 570px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
